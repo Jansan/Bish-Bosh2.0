@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 50px;
+    background-color: teal;
+}
+header h4{
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+footer{
+    background-color: lightgreen;
+    height: 35px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    
+}
+footer p{
+    text-align: center;
+    padding: 8px;
+    font-style: italic;
+    color: gray;
+    
+}
