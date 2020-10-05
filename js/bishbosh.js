@@ -1,35 +1,39 @@
 document.querySelector('#start').addEventListener('click', BishBosh);
 function BishBosh() {
 
-    let myCollection = document.getElementById('#bish').value;
+    let bish = parseInt(document.getElementById('bish').value);
+    let bosh = parseInt(document.getElementById('bosh').value);
+    let number = parseInt(document.getElementById('count').value);
 
-    let demo = document.getElementsByTagName("p");
+    let resultContainer = document.getElementById('result');
 
-    for (let i = 1; i < 100; i++) {
-        if (i % 3 == 0 && i % 4 == 0) {
-            for (let i = 0; 0 < myCollection.length; i++) {
-                myCollection[i].innerHTML = "Bish-Bosh";
-                console.log(myCollection);
-            }
 
-        } else if (i % 3 == 0) {
+    for (let i = 1; i < number; i++) {
+        var elem = document.createElement('p');
+        if (i % bish == 0 && i % bosh == 0) {
 
-            console.log("Bish");
-        } else if (i % 4 == 0) {
+            elem.innerText = "Bish-Bosh";
 
-            console.log("Bosh");
+            resultContainer.appendChild(elem);
+
+
+
+        } else if (i % bish == 0) {
+            elem.innerText = "Bish";
+            resultContainer.appendChild(elem);
+        } else if (i % bosh == 0) {
+
+            elem.innerText = "Bosh";
+            resultContainer.appendChild(elem);
         } else {
 
-            console.log(i);
+            elem.innerText = i;
+            resultContainer.appendChild(elem);
         }
     }
 
 }
-BishBosh();
 
-function SetInput(userInput) {
-    document.getElementById("number").textContent = userInput;
-}
 
-SetInput(userInput);
+
 

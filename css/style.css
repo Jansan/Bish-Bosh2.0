@@ -12,6 +12,28 @@ header h4{
     padding: 12px;
     color: white;
 }
+.bish-bosh{
+    margin: 25px;
+    text-align: center;
+}
+.bish-bosh h1, h3{
+    margin: 25px 0;
+    
+}
+.btn{
+    padding: 16px 50px;
+    color: white;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.result{
+    padding: 20px;
+}
 footer{
     background-color: lightgreen;
     height: 35px;
